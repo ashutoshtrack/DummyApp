@@ -58,6 +58,8 @@ class RegisterScreen extends Component {
   }
 
   populateData = async () => {
+    //Aware about AsyncStorage and Picker deprication from core
+    // Added form the core temperory for demo
     try {
       let res = await AsyncStorage.getItem(CURRENT_USER_DETAILS);
       if (res) {
@@ -92,6 +94,7 @@ class RegisterScreen extends Component {
 
   //passes by validation
   checkForRecord = () => {
+    // if valid  it records
     if (this.validate(this.state.details)) {
       this.recordVisitor();
     }

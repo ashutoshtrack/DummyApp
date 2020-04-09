@@ -1,4 +1,7 @@
 # DummyApp
+
+Android build  sits in /delivery directory
+
 Carried out below work:
 
 1. persistant form display

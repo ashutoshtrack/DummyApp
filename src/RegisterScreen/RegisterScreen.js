@@ -84,9 +84,9 @@ class RegisterScreen extends Component {
     //Sets when App is killed or in background
     if (nextAppState === 'background') {
       this.commitToStore();
-      Custom.startService();
+      Custom.startService(); //Starts notification background
     } else {
-      Custom.stopService();
+      Custom.stopService(); // Stops notification  display once foreground
     }
   };
 
